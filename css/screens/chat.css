@@ -33,6 +33,30 @@
   }
 }
 
+@keyframes fadeInMessage {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInMessage--own {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 180px;
   display: flex;
@@ -54,6 +78,18 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: fadeInMessage 1s linear forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.message-row--own {
+  animation: fadeInMessage--own 1s linear forwards;
+  animation-delay: 4s;
+}
+
+.message-row:last-child {
+  animation-delay: 6s;
 }
 
 .message-row img {
