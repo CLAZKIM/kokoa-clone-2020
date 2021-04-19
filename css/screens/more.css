@@ -38,3 +38,7 @@
   font-size: 32px;
   color: white;
 }
+
+.fa-cut {
+  transform: rotateZ(90deg);
+}
