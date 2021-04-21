@@ -1,15 +1,55 @@
+#settings-screen {
+  height: 128vh;
+}
+
+#settings-screen .alt-header {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#settings-screen .status-bar {
+  z-index: 2;
+}
+
+#settings-screen .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+
+#settings-screen .nav {
+  z-index: 1;
+}
+
+.settings-lists {
+  margin-top: 120px;
+}
+
+.settings-list:nth-child(2),
+.settings-list:last-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
 .settings__setting {
-  padding: 20px 0;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 19px;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.settings__setting:last-child {
+  border-bottom: none;
+}
+
 .settings__setting i {
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 25px;
   opacity: 0.8;
 }
 
